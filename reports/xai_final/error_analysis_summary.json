@@ -1,0 +1,50 @@
+{
+  "total_test": 1378,
+  "total_errors": 148,
+  "error_rate": 0.1074,
+  "errors_by_direction": {
+    "nötr_to_pozitif": 47,
+    "nötr_to_negatif": 41,
+    "negatif_to_nötr": 31,
+    "pozitif_to_nötr": 28,
+    "pozitif_to_negatif": 1
+  },
+  "errors_by_category": {
+    "guvenli_yanlis": 95,
+    "orta_seviye": 26,
+    "belirsiz_dengesiz": 24,
+    "etiket_gurultusu_supheli": 3
+  },
+  "errors_by_dir_x_cat": {
+    "negatif_to_nötr__belirsiz_dengesiz": 2,
+    "negatif_to_nötr__etiket_gurultusu_supheli": 1,
+    "negatif_to_nötr__guvenli_yanlis": 22,
+    "negatif_to_nötr__orta_seviye": 6,
+    "nötr_to_negatif__belirsiz_dengesiz": 7,
+    "nötr_to_negatif__guvenli_yanlis": 28,
+    "nötr_to_negatif__orta_seviye": 6,
+    "nötr_to_pozitif__belirsiz_dengesiz": 9,
+    "nötr_to_pozitif__guvenli_yanlis": 30,
+    "nötr_to_pozitif__orta_seviye": 8,
+    "pozitif_to_negatif__guvenli_yanlis": 1,
+    "pozitif_to_nötr__belirsiz_dengesiz": 6,
+    "pozitif_to_nötr__etiket_gurultusu_supheli": 2,
+    "pozitif_to_nötr__guvenli_yanlis": 14,
+    "pozitif_to_nötr__orta_seviye": 6
+  },
+  "confidence_stats": {
+    "mean_max_prob": 0.832,
+    "median_max_prob": 0.8479,
+    "high_conf_errors_count": 98,
+    "low_conf_errors_count": 3
+  },
+  "wc_stats": {
+    "mean": 50.5,
+    "median": 39,
+    "min": 3,
+    "max": 263
+  },
+  "by_source": {
+    "otelpuan.com": 148
+  }
+}

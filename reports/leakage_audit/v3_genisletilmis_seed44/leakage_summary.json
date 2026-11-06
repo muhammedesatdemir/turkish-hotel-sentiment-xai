@@ -1,0 +1,28 @@
+{
+  "run_name": "v3_genisletilmis_seed44",
+  "n_configs": 1,
+  "results": [
+    {
+      "label": "single",
+      "n_train": 11736,
+      "n_val": 1192,
+      "n_test": 1409,
+      "exact": {
+        "train_val": 0,
+        "train_test": 0,
+        "val_test": 0
+      },
+      "normalized_tr_accent_punct": {
+        "train_val": 2,
+        "train_test": 6,
+        "val_test": 2
+      },
+      "jaccard_near_dup": {
+        "train_test_ge_080": 26,
+        "train_test_ge_090": 14,
+        "train_val_ge_080": 11,
+        "train_val_ge_090": 3
+      }
+    }
+  ]
+}

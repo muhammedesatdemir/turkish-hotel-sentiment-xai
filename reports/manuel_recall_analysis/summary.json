@@ -1,0 +1,350 @@
+{
+  "per_source_recall": [
+    {
+      "seed": 42,
+      "source": "manuel_toplama",
+      "sentiment_label": "nötr",
+      "n": 142,
+      "n_correct": 142,
+      "recall": 1.0
+    },
+    {
+      "seed": 42,
+      "source": "neredekal",
+      "sentiment_label": "negatif",
+      "n": 2,
+      "n_correct": 2,
+      "recall": 1.0
+    },
+    {
+      "seed": 42,
+      "source": "neredekal",
+      "sentiment_label": "pozitif",
+      "n": 3,
+      "n_correct": 3,
+      "recall": 1.0
+    },
+    {
+      "seed": 42,
+      "source": "otelpuan.com",
+      "sentiment_label": "negatif",
+      "n": 435,
+      "n_correct": 413,
+      "recall": 0.9494252873563218
+    },
+    {
+      "seed": 42,
+      "source": "otelpuan.com",
+      "sentiment_label": "nötr",
+      "n": 283,
+      "n_correct": 170,
+      "recall": 0.6007067137809188
+    },
+    {
+      "seed": 42,
+      "source": "otelpuan.com",
+      "sentiment_label": "pozitif",
+      "n": 528,
+      "n_correct": 495,
+      "recall": 0.9375
+    },
+    {
+      "seed": 43,
+      "source": "manuel_toplama",
+      "sentiment_label": "nötr",
+      "n": 132,
+      "n_correct": 132,
+      "recall": 1.0
+    },
+    {
+      "seed": 43,
+      "source": "neredekal",
+      "sentiment_label": "pozitif",
+      "n": 2,
+      "n_correct": 2,
+      "recall": 1.0
+    },
+    {
+      "seed": 43,
+      "source": "otelpuan.com",
+      "sentiment_label": "negatif",
+      "n": 437,
+      "n_correct": 406,
+      "recall": 0.9290617848970252
+    },
+    {
+      "seed": 43,
+      "source": "otelpuan.com",
+      "sentiment_label": "nötr",
+      "n": 278,
+      "n_correct": 190,
+      "recall": 0.6834532374100719
+    },
+    {
+      "seed": 43,
+      "source": "otelpuan.com",
+      "sentiment_label": "pozitif",
+      "n": 529,
+      "n_correct": 500,
+      "recall": 0.945179584120983
+    },
+    {
+      "seed": 44,
+      "source": "manuel_toplama",
+      "sentiment_label": "nötr",
+      "n": 159,
+      "n_correct": 159,
+      "recall": 1.0
+    },
+    {
+      "seed": 44,
+      "source": "neredekal",
+      "sentiment_label": "negatif",
+      "n": 1,
+      "n_correct": 1,
+      "recall": 1.0
+    },
+    {
+      "seed": 44,
+      "source": "neredekal",
+      "sentiment_label": "pozitif",
+      "n": 2,
+      "n_correct": 2,
+      "recall": 1.0
+    },
+    {
+      "seed": 44,
+      "source": "otelpuan.com",
+      "sentiment_label": "negatif",
+      "n": 436,
+      "n_correct": 406,
+      "recall": 0.9311926605504587
+    },
+    {
+      "seed": 44,
+      "source": "otelpuan.com",
+      "sentiment_label": "nötr",
+      "n": 282,
+      "n_correct": 171,
+      "recall": 0.6063829787234043
+    },
+    {
+      "seed": 44,
+      "source": "otelpuan.com",
+      "sentiment_label": "pozitif",
+      "n": 529,
+      "n_correct": 508,
+      "recall": 0.9603024574669187
+    }
+  ],
+  "notr_aggregate": [
+    {
+      "source": "manuel_toplama",
+      "mean_recall": 1.0,
+      "std_recall": 0.0,
+      "avg_n": 144.33333333333334
+    },
+    {
+      "source": "otelpuan.com",
+      "mean_recall": 0.6301809766381317,
+      "std_recall": 0.04622234656245316,
+      "avg_n": 281.0
+    }
+  ],
+  "similarity_decomp_per_seed": [
+    {
+      "seed": 42,
+      "n_train_manuel": 534,
+      "n_test_manuel": 142,
+      "max_sim_median": 0.32358429466006744,
+      "max_sim_mean": 0.4258795960766797,
+      "max_sim_q25": 0.21498503869130886,
+      "max_sim_q75": 0.6387222021835506,
+      "frac_above_0.7": 0.2112676056338028,
+      "frac_above_0.5": 0.3028169014084507,
+      "frac_above_0.3": 0.5211267605633803,
+      "frac_below_0.7": 0.7887323943661971
+    },
+    {
+      "seed": 43,
+      "n_train_manuel": 539,
+      "n_test_manuel": 132,
+      "max_sim_median": 0.3085439696024842,
+      "max_sim_mean": 0.4165481936063344,
+      "max_sim_q25": 0.20685302012692885,
+      "max_sim_q75": 0.6051333892588089,
+      "frac_above_0.7": 0.19696969696969696,
+      "frac_above_0.5": 0.32575757575757575,
+      "frac_above_0.3": 0.5,
+      "frac_below_0.7": 0.803030303030303
+    },
+    {
+      "seed": 44,
+      "n_train_manuel": 527,
+      "n_test_manuel": 159,
+      "max_sim_median": 0.30372758343123774,
+      "max_sim_mean": 0.4354103600894582,
+      "max_sim_q25": 0.22338601034782068,
+      "max_sim_q75": 0.6700365576424681,
+      "frac_above_0.7": 0.24528301886792453,
+      "frac_above_0.5": 0.3270440251572327,
+      "frac_above_0.3": 0.5031446540880503,
+      "frac_below_0.7": 0.7547169811320755
+    }
+  ],
+  "recall_by_sim_threshold": [
+    {
+      "seed": 42,
+      "sim_low": 0.9,
+      "sim_high": 1.01,
+      "bucket": "sim >= 0.9 (cok yakin)",
+      "n": 10,
+      "recall": 1.0
+    },
+    {
+      "seed": 42,
+      "sim_low": 0.7,
+      "sim_high": 0.9,
+      "bucket": "sim 0.7-0.9 (yakin)",
+      "n": 20,
+      "recall": 1.0
+    },
+    {
+      "seed": 42,
+      "sim_low": 0.5,
+      "sim_high": 0.7,
+      "bucket": "sim 0.5-0.7 (orta)",
+      "n": 13,
+      "recall": 1.0
+    },
+    {
+      "seed": 42,
+      "sim_low": 0.3,
+      "sim_high": 0.5,
+      "bucket": "sim 0.3-0.5 (uzak)",
+      "n": 31,
+      "recall": 1.0
+    },
+    {
+      "seed": 42,
+      "sim_low": 0.0,
+      "sim_high": 0.3,
+      "bucket": "sim < 0.3 (cok uzak)",
+      "n": 68,
+      "recall": 1.0
+    },
+    {
+      "seed": 43,
+      "sim_low": 0.9,
+      "sim_high": 1.01,
+      "bucket": "sim >= 0.9 (cok yakin)",
+      "n": 6,
+      "recall": 1.0
+    },
+    {
+      "seed": 43,
+      "sim_low": 0.7,
+      "sim_high": 0.9,
+      "bucket": "sim 0.7-0.9 (yakin)",
+      "n": 20,
+      "recall": 1.0
+    },
+    {
+      "seed": 43,
+      "sim_low": 0.5,
+      "sim_high": 0.7,
+      "bucket": "sim 0.5-0.7 (orta)",
+      "n": 17,
+      "recall": 1.0
+    },
+    {
+      "seed": 43,
+      "sim_low": 0.3,
+      "sim_high": 0.5,
+      "bucket": "sim 0.3-0.5 (uzak)",
+      "n": 23,
+      "recall": 1.0
+    },
+    {
+      "seed": 43,
+      "sim_low": 0.0,
+      "sim_high": 0.3,
+      "bucket": "sim < 0.3 (cok uzak)",
+      "n": 66,
+      "recall": 1.0
+    },
+    {
+      "seed": 44,
+      "sim_low": 0.9,
+      "sim_high": 1.01,
+      "bucket": "sim >= 0.9 (cok yakin)",
+      "n": 17,
+      "recall": 1.0
+    },
+    {
+      "seed": 44,
+      "sim_low": 0.7,
+      "sim_high": 0.9,
+      "bucket": "sim 0.7-0.9 (yakin)",
+      "n": 22,
+      "recall": 1.0
+    },
+    {
+      "seed": 44,
+      "sim_low": 0.5,
+      "sim_high": 0.7,
+      "bucket": "sim 0.5-0.7 (orta)",
+      "n": 13,
+      "recall": 1.0
+    },
+    {
+      "seed": 44,
+      "sim_low": 0.3,
+      "sim_high": 0.5,
+      "bucket": "sim 0.3-0.5 (uzak)",
+      "n": 28,
+      "recall": 1.0
+    },
+    {
+      "seed": 44,
+      "sim_low": 0.0,
+      "sim_high": 0.3,
+      "bucket": "sim < 0.3 (cok uzak)",
+      "n": 79,
+      "recall": 1.0
+    }
+  ],
+  "cluster_stats": [
+    {
+      "threshold": 0.4,
+      "n_clusters": 485,
+      "n_singletons": 406,
+      "n_2to4": 61,
+      "sum_2to4": 156,
+      "n_5plus": 18,
+      "sum_5plus": 189,
+      "avg_5plus_size": 10.5
+    },
+    {
+      "threshold": 0.5,
+      "n_clusters": 557,
+      "n_singletons": 481,
+      "n_2to4": 65,
+      "sum_2to4": 160,
+      "n_5plus": 11,
+      "sum_5plus": 110,
+      "avg_5plus_size": 10.0
+    },
+    {
+      "threshold": 0.6,
+      "n_clusters": 591,
+      "n_singletons": 520,
+      "n_2to4": 62,
+      "sum_2to4": 155,
+      "n_5plus": 9,
+      "sum_5plus": 76,
+      "avg_5plus_size": 8.444444444444445
+    }
+  ],
+  "main_finding": "Test_manuel uzak orneklerinin (%77+ sim<0.7) bile recall %100 → ezberleme reddedildi"
+}

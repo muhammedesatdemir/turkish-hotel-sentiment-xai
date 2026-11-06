@@ -1,0 +1,8 @@
+{
+  "model": "ELECTRA-tr",
+  "setting": "leaky (synthetic in all splits, v3_baseline split, seed 42)",
+  "test_ai_count": 250,
+  "accuracy": 0.9213,
+  "macro_f1": 0.9178,
+  "berturk_leaky_macro_f1_ref": 0.9122
+}

@@ -1,0 +1,9 @@
+kind,text,wc,true,pred,correct
+dogru_negatif,Sadece casino ya önem verilmiş herşey dahil gidilmesine rağmen birçok şeyin ücreti var çok saçma bir düzen.,17,negatif,negatif,1
+dogru_nötr,Etkinlik olmaması iyi değildi. Çok üzün süre kalınmaz. Her şey dahil konseptine alıştık sanırım o yüzden. Olumlu yönü olarak temiz bir tesisti. Personel yaklaşımı iyi.,25,nötr,nötr,1
+dogru_pozitif,genel olarak otelden çok memnun kaldık. personel güler yüzlü ve yardımsever. yemekler lezzetli. içecekler ana binada kaliteli.,17,pozitif,pozitif,1
+hata_notr_negatif,"Otelde havuz ve gösteri imkanları gayet güzeldi lakin yemek lezzetleri çok kötüydü kahvaltı çeşitleri, pizza buzdolabı kokuyordu. Oda temizliği her gün yapıldı memnunduk. Otel kesinlikle aile çocuk oteli herkesin çocuğu var sevgililerin baş başa gitmesini önermem kalabalık bir otel.",39,nötr,negatif,0
+hata_notr_pozitif,Otel her şeyiyle güzel. Temizdi. Bakımlıydı. Bir tek casionlar sıkıntı sizin için önemli değilse casinoya çok takılmayın ama benim fikrimi çok etkiledi.,22,nötr,pozitif,0
+hata_pozitif_notr,"Otelin olanakları güzeldi ve çok temizdi. Hava kötüydü, bu yüzden olanaklardan yararlanamadım. Ancak düzenli ve yemeklerle ilgili herhangi bir sıkıntı yoktu.",21,pozitif,nötr,0
+hata_negatif_notr,"Güzel bir otel. Her şey standarttı. Havuzu kirliydi, yaprak dökülüyor rüzgar olduğu için o da normaldi. Kahvaltıları kötüydü, ürünleri bayattı, akşam yemeği de fena değildi. Odaları da temizdi. Fiyat ve performans açısından orta derece ne pahalı ne de ucuz.",39,negatif,nötr,0
+dogru_notr_uzun,"Yol üstü bir duraktı, beklentim düşüktü. Oda temiz, yatak rahat. İnternet sadece lobide çekiyor. Personel az ama çalışkan. Kahvaltı tabağı doyurucuydu. Girişteki resepsiyon yoğunluğu nedeniyle biraz bekledim. Klima kumandası bozuktu, manuel açtım. Genel anlamda fena değildi.",36,nötr,nötr,1

@@ -1,0 +1,2 @@
+a_idx,b_idx,jaccard,a_text,b_text
+5759,345,1.0,"""Konumu güzeldi,temiz bir oteldi,personelleri ilgiliydi.""",Konumu güzeldi. Temiz bir oteldi. Personelleri ilgiliydi.

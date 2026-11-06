@@ -1,0 +1,1874 @@
+{
+  "model_dir": "models\\optimized_v3\\v3_bigtest\\bert-base-turkish-cased_len256_ep5_lr2e-05_losswce_seed42\\best_model",
+  "pred_csv": "models\\optimized_v3\\v3_bigtest\\bert-base-turkish-cased_len256_ep5_lr2e-05_losswce_seed42\\test_predictions.csv",
+  "examples": [
+    {
+      "kind": "dogru_negatif",
+      "text": "Otel çok eskiydi. Odalar çok temiz değildi. Hijyen açısından memnun kalmadım. Konumu iyiydi. Personellerin ilgisi ortaydı. Otel yetişkinlere hitap etmektedir. Fiyatı uygundu bu fiyata bu hizmet normaldi.",
+      "wc": 27,
+      "true": "negatif",
+      "pred": "negatif",
+      "correct": 1
+    },
+    {
+      "kind": "dogru_nötr",
+      "text": "Tesis ve personel cok iyi olmakla birlikte yemekler gercekten cok basarisizdi.",
+      "wc": 11,
+      "true": "nötr",
+      "pred": "nötr",
+      "correct": 1
+    },
+    {
+      "kind": "dogru_pozitif",
+      "text": "Tesisin hizmetinden memnun kaldım. Asistan hzimetinin oluşu, bizlerle ilgilenmeleri, yemekleri gayet iyiydi. Odamızdan memnun kaldık. Bungalovda konaklama yaptık. Odamız rahattı. Çocuklar aileler için de eğlence olanakları, havuz ve deniz olanakları, lunaparkı iyiydi.",
+      "wc": 32,
+      "true": "pozitif",
+      "pred": "pozitif",
+      "correct": 1
+    },
+    {
+      "kind": "hata_notr_negatif",
+      "text": "Otelin yemekleri yuldızıa göre kötüydü resepsiyon personeli ilgili ve alakalıydı meyve çeşidi tatlı çeşidi çok azdı casino giriş ücretleri yüksekti.",
+      "wc": 20,
+      "true": "nötr",
+      "pred": "negatif",
+      "correct": 0
+    },
+    {
+      "kind": "hata_notr_pozitif",
+      "text": "\"Oteli hizmet açısından tavsiye ederim. Restoranları güzeldi. Havuzu ve denizi sakinliği,fazlalığı ve on altı yaş sınırın olmasıyla güzeldi. Yemekleri güzeldi,lezzetliydi,özenliydi. Personel güler yüzlü. Otele iletmiştim ama yemeklerin üstündeki lambalar çok yakındı. Küçük kızım elini yaktı. İz kalacak muhtemelen,yapışarak yandı. Biz bile kapak açarken elimiz deyiyordu.\"",
+      "wc": 45,
+      "true": "nötr",
+      "pred": "pozitif",
+      "correct": 0
+    },
+    {
+      "kind": "hata_pozitif_notr",
+      "text": "\"Tesisin konumu harika doğa ile iç içe. Denizi havuzu güzel. Tesis hakkında bilgilendirme eksikliği var. Misafirlere tanıtım tam olarak yapılmıyor,ne nerede kendin buluyorsun. Personeller güler yüzlü ve yardımseverdi.\"",
+      "wc": 28,
+      "true": "pozitif",
+      "pred": "nötr",
+      "correct": 0
+    },
+    {
+      "kind": "hata_negatif_notr",
+      "text": "Otelde ortam güzeldi. Çalışanlar iyiydi. Sadece yemeklerde çeşit vardı ama lezzeti kötüydü, yemeklerin yağları kötüydü. Akşam yemeğini yiyemedik iyi değildi. Kahvaltısı güzeldi.",
+      "wc": 22,
+      "true": "negatif",
+      "pred": "nötr",
+      "correct": 0
+    },
+    {
+      "kind": "dogru_notr_uzun",
+      "text": "Mevkisi güzeldi. Odamızda sigara kokusu vardı çarşaf ve yorganlara sinmişti ama genel olarak temiz bir tesisti sigara içmeyen biri olduğum için beni rahatsız etti. Personelleri ilgiliydi.",
+      "wc": 26,
+      "true": "nötr",
+      "pred": "nötr",
+      "correct": 1
+    }
+  ],
+  "lime": [
+    {
+      "idx": 1,
+      "kind": "dogru_negatif",
+      "text": "Otel çok eskiydi. Odalar çok temiz değildi. Hijyen açısından memnun kalmadım. Konumu iyiydi. Personellerin ilgisi ortaydı. Otel yetişkinlere hitap etmektedir. Fiyatı uygundu bu fiyata bu hizmet normaldi.",
+      "true": "negatif",
+      "pred": "negatif",
+      "correct": 1,
+      "html": "lime_case_01_dogru_negatif.html",
+      "top_features_for_predicted": [
+        [
+          "kalmadım",
+          0.5312821060415914
+        ],
+        [
+          "memnun",
+          0.2865513957459018
+        ],
+        [
+          "değildi",
+          0.26557818427413965
+        ],
+        [
+          "iyiydi",
+          -0.2641539392622583
+        ],
+        [
+          "eskiydi",
+          0.09634587318937887
+        ],
+        [
+          "Konumu",
+          0.0899329709799142
+        ],
+        [
+          "bu",
+          0.08931133099486986
+        ],
+        [
+          "çok",
+          -0.0891340239402511
+        ]
+      ],
+      "top_features_for_true": [
+        [
+          "kalmadım",
+          0.5312821060415914
+        ],
+        [
+          "memnun",
+          0.2865513957459018
+        ],
+        [
+          "değildi",
+          0.26557818427413965
+        ],
+        [
+          "iyiydi",
+          -0.2641539392622583
+        ],
+        [
+          "eskiydi",
+          0.09634587318937887
+        ],
+        [
+          "Konumu",
+          0.0899329709799142
+        ],
+        [
+          "bu",
+          0.08931133099486986
+        ],
+        [
+          "çok",
+          -0.0891340239402511
+        ]
+      ]
+    },
+    {
+      "idx": 2,
+      "kind": "dogru_nötr",
+      "text": "Tesis ve personel cok iyi olmakla birlikte yemekler gercekten cok basarisizdi.",
+      "true": "nötr",
+      "pred": "nötr",
+      "correct": 1,
+      "html": "lime_case_02_dogru_nötr.html",
+      "top_features_for_predicted": [
+        [
+          "iyi",
+          0.5332415237315131
+        ],
+        [
+          "basarisizdi",
+          0.32968987780180004
+        ],
+        [
+          "birlikte",
+          0.10639890853040078
+        ],
+        [
+          "gercekten",
+          -0.09254952340233111
+        ],
+        [
+          "yemekler",
+          0.08736556192602936
+        ],
+        [
+          "Tesis",
+          0.070867810060278
+        ],
+        [
+          "cok",
+          0.05113972571970285
+        ],
+        [
+          "cok",
+          -0.04675817721363963
+        ]
+      ],
+      "top_features_for_true": [
+        [
+          "iyi",
+          0.5332415237315131
+        ],
+        [
+          "basarisizdi",
+          0.32968987780180004
+        ],
+        [
+          "birlikte",
+          0.10639890853040078
+        ],
+        [
+          "gercekten",
+          -0.09254952340233111
+        ],
+        [
+          "yemekler",
+          0.08736556192602936
+        ],
+        [
+          "Tesis",
+          0.070867810060278
+        ],
+        [
+          "cok",
+          0.05113972571970285
+        ],
+        [
+          "cok",
+          -0.04675817721363963
+        ]
+      ]
+    },
+    {
+      "idx": 3,
+      "kind": "dogru_pozitif",
+      "text": "Tesisin hizmetinden memnun kaldım. Asistan hzimetinin oluşu, bizlerle ilgilenmeleri, yemekleri gayet iyiydi. Odamızdan memnun kaldık. Bungalovda konaklama yaptık. Odamız rahattı. Çocuklar aileler için de eğlence olanakları, havuz ve deniz olanakları, lunaparkı iyiydi.",
+      "true": "pozitif",
+      "pred": "pozitif",
+      "correct": 1,
+      "html": "lime_case_03_dogru_pozitif.html",
+      "top_features_for_predicted": [
+        [
+          "ilgilenmeleri",
+          0.007283530242473245
+        ],
+        [
+          "hzimetinin",
+          0.006844982130239238
+        ],
+        [
+          "lunaparkı",
+          0.006667668196063631
+        ],
+        [
+          "havuz",
+          0.006045329793838486
+        ],
+        [
+          "Çocuklar",
+          0.005539774623687019
+        ],
+        [
+          "oluşu",
+          0.005533356276779399
+        ],
+        [
+          "yaptık",
+          0.005464938389454062
+        ],
+        [
+          "olanakları",
+          0.005197928047621607
+        ]
+      ],
+      "top_features_for_true": [
+        [
+          "ilgilenmeleri",
+          0.007283530242473245
+        ],
+        [
+          "hzimetinin",
+          0.006844982130239238
+        ],
+        [
+          "lunaparkı",
+          0.006667668196063631
+        ],
+        [
+          "havuz",
+          0.006045329793838486
+        ],
+        [
+          "Çocuklar",
+          0.005539774623687019
+        ],
+        [
+          "oluşu",
+          0.005533356276779399
+        ],
+        [
+          "yaptık",
+          0.005464938389454062
+        ],
+        [
+          "olanakları",
+          0.005197928047621607
+        ]
+      ]
+    },
+    {
+      "idx": 4,
+      "kind": "hata_notr_negatif",
+      "text": "Otelin yemekleri yuldızıa göre kötüydü resepsiyon personeli ilgili ve alakalıydı meyve çeşidi tatlı çeşidi çok azdı casino giriş ücretleri yüksekti.",
+      "true": "nötr",
+      "pred": "negatif",
+      "correct": 0,
+      "html": "lime_case_04_hata_notr_negatif.html",
+      "top_features_for_predicted": [
+        [
+          "kötüydü",
+          0.566958082614325
+        ],
+        [
+          "azdı",
+          0.31682462693947805
+        ],
+        [
+          "ücretleri",
+          0.3148691892881044
+        ],
+        [
+          "alakalıydı",
+          -0.18807410895282253
+        ],
+        [
+          "ilgili",
+          -0.1774657634539923
+        ],
+        [
+          "yüksekti",
+          0.12018899923626503
+        ],
+        [
+          "çok",
+          0.09341017025817916
+        ],
+        [
+          "yuldızıa",
+          0.08749215656960817
+        ]
+      ],
+      "top_features_for_true": [
+        [
+          "kötüydü",
+          -0.3817558882623362
+        ],
+        [
+          "ücretleri",
+          -0.23485031491776007
+        ],
+        [
+          "alakalıydı",
+          0.18144845137561047
+        ],
+        [
+          "ilgili",
+          0.16362936445710888
+        ],
+        [
+          "azdı",
+          -0.16007216898960283
+        ],
+        [
+          "çok",
+          -0.0824377892611602
+        ],
+        [
+          "yuldızıa",
+          -0.07347980061057414
+        ],
+        [
+          "meyve",
+          0.06549343228825155
+        ]
+      ]
+    },
+    {
+      "idx": 5,
+      "kind": "hata_notr_pozitif",
+      "text": "\"Oteli hizmet açısından tavsiye ederim. Restoranları güzeldi. Havuzu ve denizi sakinliği,fazlalığı ve on altı yaş sınırın olmasıyla güzeldi. Yemekleri güzeldi,lezzetliydi,özenliydi. Personel güler yüzlü. Otele iletmiştim ama yemeklerin üstündeki lambalar çok yakındı. Küçük kızım elini yaktı. İz kalacak muhtemelen,yapışarak yandı. Biz bile kapak açarken elimiz deyiyordu.\"",
+      "true": "nötr",
+      "pred": "pozitif",
+      "correct": 0,
+      "html": "lime_case_05_hata_notr_pozitif.html",
+      "top_features_for_predicted": [
+        [
+          "özenliydi",
+          0.03213889930007128
+        ],
+        [
+          "ederim",
+          0.02828077525082557
+        ],
+        [
+          "sakinliği",
+          0.026214315657278237
+        ],
+        [
+          "hizmet",
+          0.02144674567621304
+        ],
+        [
+          "yaktı",
+          -0.020395713951900058
+        ],
+        [
+          "güzeldi",
+          0.0193137755593681
+        ],
+        [
+          "lezzetliydi",
+          0.018800128398314797
+        ],
+        [
+          "güzeldi",
+          0.017730300708463227
+        ]
+      ],
+      "top_features_for_true": [
+        [
+          "özenliydi",
+          -0.025606680231280866
+        ],
+        [
+          "ederim",
+          -0.022202806738158956
+        ],
+        [
+          "sakinliği",
+          -0.01942512509179238
+        ],
+        [
+          "güzeldi",
+          -0.017142161923871625
+        ],
+        [
+          "hizmet",
+          -0.016640730932303206
+        ],
+        [
+          "yaktı",
+          0.014627876645285191
+        ],
+        [
+          "deyiyordu",
+          -0.014291506842088573
+        ],
+        [
+          "lezzetliydi",
+          -0.013697592590156682
+        ]
+      ]
+    },
+    {
+      "idx": 6,
+      "kind": "hata_pozitif_notr",
+      "text": "\"Tesisin konumu harika doğa ile iç içe. Denizi havuzu güzel. Tesis hakkında bilgilendirme eksikliği var. Misafirlere tanıtım tam olarak yapılmıyor,ne nerede kendin buluyorsun. Personeller güler yüzlü ve yardımseverdi.\"",
+      "true": "pozitif",
+      "pred": "nötr",
+      "correct": 0,
+      "html": "lime_case_06_hata_pozitif_notr.html",
+      "top_features_for_predicted": [
+        [
+          "yapılmıyor",
+          0.47647751723115334
+        ],
+        [
+          "eksikliği",
+          0.46213394849643386
+        ],
+        [
+          "harika",
+          -0.16918047374541265
+        ],
+        [
+          "bilgilendirme",
+          0.1531507831824633
+        ],
+        [
+          "güzel",
+          -0.1379764891762418
+        ],
+        [
+          "var",
+          0.1181262051337607
+        ],
+        [
+          "buluyorsun",
+          -0.10912498561792093
+        ],
+        [
+          "Tesisin",
+          0.09253700360872319
+        ]
+      ],
+      "top_features_for_true": [
+        [
+          "yapılmıyor",
+          -0.5072355894129156
+        ],
+        [
+          "eksikliği",
+          -0.4803054307938144
+        ],
+        [
+          "harika",
+          0.1853360665930943
+        ],
+        [
+          "güzel",
+          0.16721948755605254
+        ],
+        [
+          "bilgilendirme",
+          -0.1532089748165521
+        ],
+        [
+          "var",
+          -0.12129498127053509
+        ],
+        [
+          "buluyorsun",
+          0.11820858412539043
+        ],
+        [
+          "güler",
+          0.10284322232888748
+        ]
+      ]
+    },
+    {
+      "idx": 7,
+      "kind": "hata_negatif_notr",
+      "text": "Otelde ortam güzeldi. Çalışanlar iyiydi. Sadece yemeklerde çeşit vardı ama lezzeti kötüydü, yemeklerin yağları kötüydü. Akşam yemeğini yiyemedik iyi değildi. Kahvaltısı güzeldi.",
+      "true": "negatif",
+      "pred": "nötr",
+      "correct": 0,
+      "html": "lime_case_07_hata_negatif_notr.html",
+      "top_features_for_predicted": [
+        [
+          "değildi",
+          -0.38503920293288085
+        ],
+        [
+          "iyiydi",
+          0.22669721776802657
+        ],
+        [
+          "güzeldi",
+          0.1985120127455142
+        ],
+        [
+          "kötüydü",
+          -0.1775926393111766
+        ],
+        [
+          "güzeldi",
+          0.16779543511886413
+        ],
+        [
+          "yiyemedik",
+          -0.12607201948272637
+        ],
+        [
+          "lezzeti",
+          -0.10629642127360098
+        ],
+        [
+          "kötüydü",
+          -0.10576762679077333
+        ]
+      ],
+      "top_features_for_true": [
+        [
+          "değildi",
+          0.45143901890018173
+        ],
+        [
+          "kötüydü",
+          0.2716311660070388
+        ],
+        [
+          "iyiydi",
+          -0.23007601922155294
+        ],
+        [
+          "güzeldi",
+          -0.21504546403099545
+        ],
+        [
+          "yiyemedik",
+          0.20889238721239514
+        ],
+        [
+          "kötüydü",
+          0.2000647512249739
+        ],
+        [
+          "güzeldi",
+          -0.1717465677159812
+        ],
+        [
+          "lezzeti",
+          0.10452994382402284
+        ]
+      ]
+    },
+    {
+      "idx": 8,
+      "kind": "dogru_notr_uzun",
+      "text": "Mevkisi güzeldi. Odamızda sigara kokusu vardı çarşaf ve yorganlara sinmişti ama genel olarak temiz bir tesisti sigara içmeyen biri olduğum için beni rahatsız etti. Personelleri ilgiliydi.",
+      "true": "nötr",
+      "pred": "nötr",
+      "correct": 1,
+      "html": "lime_case_08_dogru_notr_uzun.html",
+      "top_features_for_predicted": [
+        [
+          "rahatsız",
+          0.505665118147569
+        ],
+        [
+          "ilgiliydi",
+          0.1083512949089738
+        ],
+        [
+          "Odamızda",
+          0.09500684566785851
+        ],
+        [
+          "sigara",
+          0.08334212959012594
+        ],
+        [
+          "genel",
+          0.0786187830201082
+        ],
+        [
+          "etti",
+          0.07425947067216208
+        ],
+        [
+          "bir",
+          -0.07152377190498506
+        ],
+        [
+          "kokusu",
+          0.06583455126541086
+        ]
+      ],
+      "top_features_for_true": [
+        [
+          "rahatsız",
+          0.505665118147569
+        ],
+        [
+          "ilgiliydi",
+          0.1083512949089738
+        ],
+        [
+          "Odamızda",
+          0.09500684566785851
+        ],
+        [
+          "sigara",
+          0.08334212959012594
+        ],
+        [
+          "genel",
+          0.0786187830201082
+        ],
+        [
+          "etti",
+          0.07425947067216208
+        ],
+        [
+          "bir",
+          -0.07152377190498506
+        ],
+        [
+          "kokusu",
+          0.06583455126541086
+        ]
+      ]
+    }
+  ],
+  "shap": [
+    {
+      "idx": 1,
+      "kind": "dogru_negatif",
+      "text": "Otel çok eskiydi. Odalar çok temiz değildi. Hijyen açısından memnun kalmadım. Konumu iyiydi. Personellerin ilgisi ortaydı. Otel yetişkinlere hitap etmektedir. Fiyatı uygundu bu fiyata bu hizmet normaldi.",
+      "true": "negatif",
+      "pred": "negatif",
+      "html": "shap_case_01_dogru_negatif.html",
+      "per_class_top_tokens": {
+        "negatif": {
+          "pozitif_katki": [
+            [
+              "Hi",
+              0.15712306394258727
+            ],
+            [
+              "kalmadı",
+              0.13974711335104076
+            ],
+            [
+              "eski",
+              0.12755839711546674
+            ],
+            [
+              "değildi",
+              0.11985156438194364
+            ],
+            [
+              ".",
+              0.1098287704927233
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "ydi",
+              -0.02373950573753587
+            ],
+            [
+              "Fiyatı",
+              -0.02205725600736865
+            ],
+            [
+              "uygun",
+              -0.013825114695859031
+            ],
+            [
+              "yetişkin",
+              -0.013041621202984499
+            ],
+            [
+              "Konu",
+              -0.01159437467934502
+            ]
+          ]
+        },
+        "nötr": {
+          "pozitif_katki": [
+            [
+              "normal",
+              0.08997022814219235
+            ],
+            [
+              "ydi",
+              0.03282155935747858
+            ],
+            [
+              "di",
+              0.03248820535009145
+            ],
+            [
+              "Fiyatı",
+              0.024516261273328427
+            ],
+            [
+              "çok",
+              0.022264124468237736
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "Hi",
+              -0.15103027372636765
+            ],
+            [
+              "kalmadı",
+              -0.1352068032618945
+            ],
+            [
+              "eski",
+              -0.12042536109648802
+            ],
+            [
+              "değildi",
+              -0.10955863370001721
+            ],
+            [
+              ".",
+              -0.10559846227537988
+            ]
+          ]
+        },
+        "pozitif": {
+          "pozitif_katki": [
+            [
+              "uygun",
+              0.03724259577586689
+            ],
+            [
+              "hizmet",
+              0.010522581108301576
+            ],
+            [
+              "bu",
+              0.00876071949714392
+            ],
+            [
+              "Otel",
+              0.0030971684984453735
+            ],
+            [
+              ".",
+              0.0008588135811401622
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "normal",
+              -0.09314364428771821
+            ],
+            [
+              "di",
+              -0.0356961155664774
+            ],
+            [
+              "j",
+              -0.020704741771017627
+            ],
+            [
+              "yen",
+              -0.01987295654847306
+            ],
+            [
+              "temiz",
+              -0.0192862099329535
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "idx": 2,
+      "kind": "dogru_nötr",
+      "text": "Tesis ve personel cok iyi olmakla birlikte yemekler gercekten cok basarisizdi.",
+      "true": "nötr",
+      "pred": "nötr",
+      "html": "shap_case_02_dogru_nötr.html",
+      "per_class_top_tokens": {
+        "negatif": {
+          "pozitif_katki": [
+            [
+              "gercekten",
+              0.1102801784179519
+            ],
+            [
+              "personel",
+              0.09513243782748759
+            ],
+            [
+              "ve",
+              0.07985079621175828
+            ],
+            [
+              "olmakla",
+              0.015924176454745975
+            ],
+            [
+              "basar",
+              0.01357582211448971
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "iyi",
+              -0.35534832134226235
+            ],
+            [
+              "di",
+              -0.0594503142638132
+            ],
+            [
+              "Tesis",
+              -0.04478398128412664
+            ],
+            [
+              "cok",
+              -0.02599031987710987
+            ],
+            [
+              "birlikte",
+              -0.014338261462171431
+            ]
+          ]
+        },
+        "nötr": {
+          "pozitif_katki": [
+            [
+              "isiz",
+              0.45774033742782194
+            ],
+            [
+              "iyi",
+              0.30607851226091043
+            ],
+            [
+              "di",
+              0.2732719574123621
+            ],
+            [
+              "olmakla",
+              0.18461782838357976
+            ],
+            [
+              "birlikte",
+              0.11265455061356988
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "gercekten",
+              -0.2954186106912857
+            ],
+            [
+              "ve",
+              -0.11637647157931497
+            ],
+            [
+              "personel",
+              -0.10883505000765581
+            ],
+            [
+              "basar",
+              -0.10585770646866877
+            ],
+            [
+              "cok",
+              -0.08538203042553505
+            ]
+          ]
+        },
+        "pozitif": {
+          "pozitif_katki": [
+            [
+              "gercekten",
+              0.18513841376329765
+            ],
+            [
+              "basar",
+              0.09228190798694413
+            ],
+            [
+              "cok",
+              0.07942398386376226
+            ],
+            [
+              "cok",
+              0.07857827937596085
+            ],
+            [
+              "iyi",
+              0.04926982398319524
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "isiz",
+              -0.4568792852505794
+            ],
+            [
+              "di",
+              -0.21382162659392634
+            ],
+            [
+              "olmakla",
+              -0.20054201505604397
+            ],
+            [
+              "birlikte",
+              -0.09831629767791128
+            ],
+            [
+              ".",
+              -0.07640598237412632
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "idx": 3,
+      "kind": "dogru_pozitif",
+      "text": "Tesisin hizmetinden memnun kaldım. Asistan hzimetinin oluşu, bizlerle ilgilenmeleri, yemekleri gayet iyiydi. Odamızdan memnun kaldık. Bungalovda konaklama yaptık. Odamız rahattı. Çocuklar aileler için de eğlence olanakları, havuz ve deniz olanakları, lunaparkı iyiydi.",
+      "true": "pozitif",
+      "pred": "pozitif",
+      "html": "shap_case_03_dogru_pozitif.html",
+      "per_class_top_tokens": {
+        "negatif": {
+          "pozitif_katki": [
+            [
+              ".",
+              0.0066778452814224174
+            ],
+            [
+              "in",
+              0.004176329969213575
+            ],
+            [
+              "dan",
+              0.0029158794291611733
+            ],
+            [
+              ".",
+              0.002786376583925529
+            ],
+            [
+              "için",
+              0.0026760039626855074
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "kaldım",
+              -0.030489332661624718
+            ],
+            [
+              "memnun",
+              -0.020795843397160712
+            ],
+            [
+              "iyiydi",
+              -0.01588271614628286
+            ],
+            [
+              "gayet",
+              -0.012853757666110709
+            ],
+            [
+              "istan",
+              -0.010997595325158687
+            ]
+          ]
+        },
+        "nötr": {
+          "pozitif_katki": [
+            [
+              "kaldım",
+              0.029621091719530777
+            ],
+            [
+              "memnun",
+              0.026502722922526555
+            ],
+            [
+              "istan",
+              0.016478788461466574
+            ],
+            [
+              "in",
+              0.011696161366104945
+            ],
+            [
+              "konaklama",
+              0.011268400612130964
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "memnun",
+              -0.08562413391276398
+            ],
+            [
+              "ilgilen",
+              -0.055661844721989706
+            ],
+            [
+              "meleri",
+              -0.04159128985274024
+            ],
+            [
+              "kaldık",
+              -0.02961202400122905
+            ],
+            [
+              "gayet",
+              -0.02949993508836074
+            ]
+          ]
+        },
+        "pozitif": {
+          "pozitif_katki": [
+            [
+              "memnun",
+              0.09595529520366755
+            ],
+            [
+              "ilgilen",
+              0.05645777649845948
+            ],
+            [
+              "gayet",
+              0.04235369197197977
+            ],
+            [
+              "meleri",
+              0.04228339796321487
+            ],
+            [
+              "iyiydi",
+              0.0411147106883025
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "in",
+              -0.0158724888511326
+            ],
+            [
+              ".",
+              -0.009752567018554344
+            ],
+            [
+              ".",
+              -0.009712929120532385
+            ],
+            [
+              "As",
+              -0.008519381449846347
+            ],
+            [
+              "konaklama",
+              -0.006511662898692376
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "idx": 4,
+      "kind": "hata_notr_negatif",
+      "text": "Otelin yemekleri yuldızıa göre kötüydü resepsiyon personeli ilgili ve alakalıydı meyve çeşidi tatlı çeşidi çok azdı casino giriş ücretleri yüksekti.",
+      "true": "nötr",
+      "pred": "negatif",
+      "html": "shap_case_04_hata_notr_negatif.html",
+      "per_class_top_tokens": {
+        "negatif": {
+          "pozitif_katki": [
+            [
+              "kötü",
+              0.5671141070924932
+            ],
+            [
+              "yemekleri",
+              0.10618752166919876
+            ],
+            [
+              "Oteli",
+              0.05908372960887694
+            ],
+            [
+              "a",
+              0.05738708570182401
+            ],
+            [
+              "n",
+              0.053270293491853714
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "ilgili",
+              -0.10553847504606413
+            ],
+            [
+              "ve",
+              -0.09537850727328508
+            ],
+            [
+              "ld",
+              -0.028728172641422134
+            ],
+            [
+              "personeli",
+              -0.018661456104286787
+            ],
+            [
+              "resepsiyon",
+              -0.015969832103923852
+            ]
+          ]
+        },
+        "nötr": {
+          "pozitif_katki": [
+            [
+              "ilgili",
+              0.08390281781353942
+            ],
+            [
+              "ld",
+              0.07205002234210649
+            ],
+            [
+              "az",
+              0.04854133633412666
+            ],
+            [
+              "ve",
+              0.04298430305530737
+            ],
+            [
+              "çok",
+              0.03148814944551416
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "kötü",
+              -0.5414393642289118
+            ],
+            [
+              "yemekleri",
+              -0.08346033025494155
+            ],
+            [
+              "Oteli",
+              -0.04719707442321427
+            ],
+            [
+              "a",
+              -0.04362493720206354
+            ],
+            [
+              "alakalı",
+              -0.04268367596418293
+            ]
+          ]
+        },
+        "pozitif": {
+          "pozitif_katki": [
+            [
+              "ve",
+              0.05239421139293355
+            ],
+            [
+              "alakalı",
+              0.04545385741192532
+            ],
+            [
+              "ilgili",
+              0.02163565381186728
+            ],
+            [
+              "çeşidi",
+              0.020385546089241154
+            ],
+            [
+              "meyve",
+              0.010999814406826963
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "az",
+              -0.07625605727363635
+            ],
+            [
+              "çok",
+              -0.05399750548475136
+            ],
+            [
+              "ücretleri",
+              -0.05165228298663574
+            ],
+            [
+              "ld",
+              -0.04332184901977598
+            ],
+            [
+              "yüksek",
+              -0.03202746780363285
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "idx": 5,
+      "kind": "hata_notr_pozitif",
+      "text": "\"Oteli hizmet açısından tavsiye ederim. Restoranları güzeldi. Havuzu ve denizi sakinliği,fazlalığı ve on altı yaş sınırın olmasıyla güzeldi. Yemekleri güzeldi,lezzetliydi,özenliydi. Personel güler yüzlü. Otele iletmiştim ama yemeklerin üstündeki lambalar çok yakındı. Küçük kızım elini yaktı. İz kalacak muhtemelen,yapışarak yandı. Biz bile kapak açarken elimiz deyiyordu.\"",
+      "true": "nötr",
+      "pred": "pozitif",
+      "html": "shap_case_05_hata_notr_pozitif.html",
+      "per_class_top_tokens": {
+        "negatif": {
+          "pozitif_katki": [
+            [
+              "üstündeki",
+              0.0049926097640958945
+            ],
+            [
+              "ama",
+              0.004852696085314049
+            ],
+            [
+              "ilet",
+              0.004767905680401667
+            ],
+            [
+              "miştim",
+              0.004727215740095629
+            ],
+            [
+              "e",
+              0.004413825502175199
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "güler",
+              -0.024437372173691883
+            ],
+            [
+              "güzeldi",
+              -0.021407239324465383
+            ],
+            [
+              "Personel",
+              -0.01779571074281547
+            ],
+            [
+              "güzeldi",
+              -0.017609135203896484
+            ],
+            [
+              "denizi",
+              -0.014361093693246908
+            ]
+          ]
+        },
+        "nötr": {
+          "pozitif_katki": [
+            [
+              ",",
+              0.03714241025328294
+            ],
+            [
+              "denizi",
+              0.016257850494134293
+            ],
+            [
+              "Personel",
+              0.0138696297516516
+            ],
+            [
+              ",",
+              0.00931463490211634
+            ],
+            [
+              "\"",
+              0.00862285962365503
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "güzeldi",
+              -0.06337432145129343
+            ],
+            [
+              "ederim",
+              -0.040731765917977704
+            ],
+            [
+              "Havuz",
+              -0.03601599404924451
+            ],
+            [
+              ".",
+              -0.0347790206181647
+            ],
+            [
+              "lezzetli",
+              -0.03348514382964317
+            ]
+          ]
+        },
+        "pozitif": {
+          "pozitif_katki": [
+            [
+              "güzeldi",
+              0.08098345478949207
+            ],
+            [
+              "ederim",
+              0.0539179986808449
+            ],
+            [
+              "Havuz",
+              0.042669632611149505
+            ],
+            [
+              "lezzetli",
+              0.04082423663311163
+            ],
+            [
+              ".",
+              0.03344503235227118
+            ]
+          ],
+          "negatif_katki": [
+            [
+              ",",
+              -0.033326629458719656
+            ],
+            [
+              "ama",
+              -0.008404006512237223
+            ],
+            [
+              "\"",
+              -0.00517737011735638
+            ],
+            [
+              ",",
+              -0.005057879860427295
+            ],
+            [
+              "yak",
+              -0.004043331453219431
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "idx": 6,
+      "kind": "hata_pozitif_notr",
+      "text": "\"Tesisin konumu harika doğa ile iç içe. Denizi havuzu güzel. Tesis hakkında bilgilendirme eksikliği var. Misafirlere tanıtım tam olarak yapılmıyor,ne nerede kendin buluyorsun. Personeller güler yüzlü ve yardımseverdi.\"",
+      "true": "pozitif",
+      "pred": "nötr",
+      "html": "shap_case_06_hata_pozitif_notr.html",
+      "per_class_top_tokens": {
+        "negatif": {
+          "pozitif_katki": [
+            [
+              "ler",
+              0.014292420927522472
+            ],
+            [
+              "Personel",
+              0.010814687810925535
+            ],
+            [
+              "buluyor",
+              0.00799721327858909
+            ],
+            [
+              "sun",
+              0.007922087630152721
+            ],
+            [
+              "mıyor",
+              0.0075343349820104774
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "güler",
+              -0.059619116370674116
+            ],
+            [
+              "güzel",
+              -0.020756922287894972
+            ],
+            [
+              "sever",
+              -0.020487966555086435
+            ],
+            [
+              "yüzlü",
+              -0.014750196183091854
+            ],
+            [
+              "tam",
+              -0.014084285340826076
+            ]
+          ]
+        },
+        "nötr": {
+          "pozitif_katki": [
+            [
+              "eksikliği",
+              0.29704974783541427
+            ],
+            [
+              "mıyor",
+              0.09333311282112845
+            ],
+            [
+              "yapıl",
+              0.0781854745176679
+            ],
+            [
+              "güler",
+              0.06979445113334805
+            ],
+            [
+              "hakkında",
+              0.06011330617257045
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "harika",
+              -0.07721261916859393
+            ],
+            [
+              "Tesis",
+              -0.07233635793355378
+            ],
+            [
+              "içe",
+              -0.05358446287837895
+            ],
+            [
+              "iç",
+              -0.03620603625577959
+            ],
+            [
+              "Misafir",
+              -0.029437293386436067
+            ]
+          ]
+        },
+        "pozitif": {
+          "pozitif_katki": [
+            [
+              "harika",
+              0.08787510759463078
+            ],
+            [
+              "Tesis",
+              0.07043274958993027
+            ],
+            [
+              "içe",
+              0.05981203723455441
+            ],
+            [
+              "iç",
+              0.04312728225010109
+            ],
+            [
+              "Misafir",
+              0.03160156435929821
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "eksikliği",
+              -0.2930408756559548
+            ],
+            [
+              "mıyor",
+              -0.10086744351293116
+            ],
+            [
+              "yapıl",
+              -0.08562411580215364
+            ],
+            [
+              "hakkında",
+              -0.056230801712263204
+            ],
+            [
+              "var",
+              -0.051373446973805886
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "idx": 7,
+      "kind": "hata_negatif_notr",
+      "text": "Otelde ortam güzeldi. Çalışanlar iyiydi. Sadece yemeklerde çeşit vardı ama lezzeti kötüydü, yemeklerin yağları kötüydü. Akşam yemeğini yiyemedik iyi değildi. Kahvaltısı güzeldi.",
+      "true": "negatif",
+      "pred": "nötr",
+      "html": "shap_case_07_hata_negatif_notr.html",
+      "per_class_top_tokens": {
+        "negatif": {
+          "pozitif_katki": [
+            [
+              "kötü",
+              0.14372310544619074
+            ],
+            [
+              "kötü",
+              0.09027340514025657
+            ],
+            [
+              "değildi",
+              0.06871812788995157
+            ],
+            [
+              "dü",
+              0.058939779163741456
+            ],
+            [
+              "yemeğini",
+              0.0528753109229001
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "güzeldi",
+              -0.24117513510136632
+            ],
+            [
+              "iyiydi",
+              -0.17789501870962945
+            ],
+            [
+              "güzeldi",
+              -0.17575732856494142
+            ],
+            [
+              "ortam",
+              -0.04076555840583751
+            ],
+            [
+              "Sadece",
+              -0.03131951546222048
+            ]
+          ]
+        },
+        "nötr": {
+          "pozitif_katki": [
+            [
+              "güzeldi",
+              0.27208967035403475
+            ],
+            [
+              "güzeldi",
+              0.18718694168395208
+            ],
+            [
+              "iyiydi",
+              0.18566675043924383
+            ],
+            [
+              "ortam",
+              0.05486706276254457
+            ],
+            [
+              "Otel",
+              0.031500425186095526
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "kötü",
+              -0.08424366289273166
+            ],
+            [
+              "dü",
+              -0.0613325245233552
+            ],
+            [
+              "değildi",
+              -0.05785357610632976
+            ],
+            [
+              ".",
+              -0.05384359199186812
+            ],
+            [
+              "yiye",
+              -0.05103186843916774
+            ]
+          ]
+        },
+        "pozitif": {
+          "pozitif_katki": [
+            [
+              "yağları",
+              0.016951439630377405
+            ],
+            [
+              "n",
+              0.013697005301894803
+            ],
+            [
+              "yemekler",
+              0.013562643770334837
+            ],
+            [
+              "yemekleri",
+              0.01174440204990138
+            ],
+            [
+              ".",
+              0.006997879076282386
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "kötü",
+              -0.08814963392420136
+            ],
+            [
+              "kötü",
+              -0.059479440700932064
+            ],
+            [
+              "iyi",
+              -0.03150570776248666
+            ],
+            [
+              "güzeldi",
+              -0.03091451817072084
+            ],
+            [
+              "sı",
+              -0.021338343174920737
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "idx": 8,
+      "kind": "dogru_notr_uzun",
+      "text": "Mevkisi güzeldi. Odamızda sigara kokusu vardı çarşaf ve yorganlara sinmişti ama genel olarak temiz bir tesisti sigara içmeyen biri olduğum için beni rahatsız etti. Personelleri ilgiliydi.",
+      "true": "nötr",
+      "pred": "nötr",
+      "html": "shap_case_08_dogru_notr_uzun.html",
+      "per_class_top_tokens": {
+        "negatif": {
+          "pozitif_katki": [
+            [
+              "ilgili",
+              0.026413645025968435
+            ],
+            [
+              "Personel",
+              0.01970572200480092
+            ],
+            [
+              "rahatsız",
+              0.01670527735864324
+            ],
+            [
+              "vardı",
+              0.015752592673394853
+            ],
+            [
+              ".",
+              0.011926097226023558
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "güzeldi",
+              -0.05192307962170162
+            ],
+            [
+              "temiz",
+              -0.05077572943392473
+            ],
+            [
+              "Mev",
+              -0.036854253014098504
+            ],
+            [
+              "leri",
+              -0.03419635362115514
+            ],
+            [
+              "ama",
+              -0.026997961099201953
+            ]
+          ]
+        },
+        "nötr": {
+          "pozitif_katki": [
+            [
+              "sigara",
+              0.11085806193756677
+            ],
+            [
+              "leri",
+              0.07257986130813758
+            ],
+            [
+              "güzeldi",
+              0.07101889550685883
+            ],
+            [
+              "kokusu",
+              0.0637235916920569
+            ],
+            [
+              "Mev",
+              0.059406932815909384
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "sigara",
+              -0.038642642219686725
+            ],
+            [
+              "ilgili",
+              -0.03150904861589273
+            ],
+            [
+              "n",
+              -0.02387032831643915
+            ],
+            [
+              "Personel",
+              -0.0215039470543464
+            ],
+            [
+              "vardı",
+              -0.01385253093127782
+            ]
+          ]
+        },
+        "pozitif": {
+          "pozitif_katki": [
+            [
+              "sigara",
+              0.028316755273954185
+            ],
+            [
+              "ti",
+              0.027855570707379228
+            ],
+            [
+              "tesis",
+              0.02430927139275809
+            ],
+            [
+              "temiz",
+              0.015473994589622939
+            ],
+            [
+              "n",
+              0.012182011401354328
+            ]
+          ],
+          "negatif_katki": [
+            [
+              "sigara",
+              -0.11318884591261545
+            ],
+            [
+              "kokusu",
+              -0.059543658680437754
+            ],
+            [
+              "rahatsız",
+              -0.040501061434598445
+            ],
+            [
+              "leri",
+              -0.0383834939081377
+            ],
+            [
+              "kisi",
+              -0.03629101703409106
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

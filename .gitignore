@@ -1,0 +1,107 @@
+# ==============================================================================
+# Model Weights & Checkpoints (Hugging Face Hub / Releases üzerinden yönetilir)
+# ==============================================================================
+models/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# ==============================================================================
+# Virtual Environments, Node Modules & Build Outputs
+# ==============================================================================
+venv/
+.venv/
+env/
+demo/venv/
+demo/frontend/node_modules/
+demo/frontend/dist/
+.pnpm-store/
+demo/**/.git*
+demo/.git_backup/
+
+# ==============================================================================
+# Python / Cache / Build Artifacts
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==============================================================================
+# Interim Data / Scratch / Uncleaned Raw CSVs
+# (Yalnızca makalede doğrulanmış 'data/processed/splits/' korunur)
+# ==============================================================================
+data/raw/
+data/processed/eski_veri_setleri/
+data/processed/splits3/
+data/processed/splits3_no_kaggle/
+data/cleaned/
+data/datasets/
+data/real_final_dataset_cleaned.csv
+data/processed/final_genisletilmis_dataset_optimized_v3_v2.csv
+*.partial.csv
+*.backup.csv
+recovered_bad_lines.csv
+data/processed/*.json
+
+# ==============================================================================
+# Thesis Drafts, Internal Docs, Personal Logs & Presentation Slides
+# ==============================================================================
+*.docx
+*.pdf
+!reports/**/*.pdf
+DeneyGorselleri/
+sunum/
+dosyalar/
+eski dosyalar/
+eski_final_raporlar/
+mayıs_sunum_oncesi_son/
+Bitirme2_FinalRapor*
+Istatistik_Dogrulama_Raporu.md
+RUNBOOK.md
+SIL_LISTESI.md
+progress2.md
+SUNUM_NOTLARI.md
+Manuel_Excluded_Report.html
+temizle.ps1
+demo/komut.txt
+*Yeni Metin Belgesi*
+
+# ==============================================================================
+# TXT Handling (requirements.txt dosyaları kesinlikle korunur)
+# ==============================================================================
+*.txt
+!requirements.txt
+!**/requirements.txt
+
+# ==============================================================================
+# IDE & System Files
+# ==============================================================================
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

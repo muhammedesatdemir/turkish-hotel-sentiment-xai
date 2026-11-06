@@ -1,0 +1,9 @@
+kind,text,wc,true,pred,correct
+dogru_negatif,Otel çok eskiydi. Odalar çok temiz değildi. Hijyen açısından memnun kalmadım. Konumu iyiydi. Personellerin ilgisi ortaydı. Otel yetişkinlere hitap etmektedir. Fiyatı uygundu bu fiyata bu hizmet normaldi.,27,negatif,negatif,1
+dogru_nötr,Tesis ve personel cok iyi olmakla birlikte yemekler gercekten cok basarisizdi.,11,nötr,nötr,1
+dogru_pozitif,"Tesisin hizmetinden memnun kaldım. Asistan hzimetinin oluşu, bizlerle ilgilenmeleri, yemekleri gayet iyiydi. Odamızdan memnun kaldık. Bungalovda konaklama yaptık. Odamız rahattı. Çocuklar aileler için de eğlence olanakları, havuz ve deniz olanakları, lunaparkı iyiydi.",32,pozitif,pozitif,1
+hata_notr_negatif,Otelin yemekleri yuldızıa göre kötüydü resepsiyon personeli ilgili ve alakalıydı meyve çeşidi tatlı çeşidi çok azdı casino giriş ücretleri yüksekti.,20,nötr,negatif,0
+hata_notr_pozitif,"""Oteli hizmet açısından tavsiye ederim. Restoranları güzeldi. Havuzu ve denizi sakinliği,fazlalığı ve on altı yaş sınırın olmasıyla güzeldi. Yemekleri güzeldi,lezzetliydi,özenliydi. Personel güler yüzlü. Otele iletmiştim ama yemeklerin üstündeki lambalar çok yakındı. Küçük kızım elini yaktı. İz kalacak muhtemelen,yapışarak yandı. Biz bile kapak açarken elimiz deyiyordu.""",45,nötr,pozitif,0
+hata_pozitif_notr,"""Tesisin konumu harika doğa ile iç içe. Denizi havuzu güzel. Tesis hakkında bilgilendirme eksikliği var. Misafirlere tanıtım tam olarak yapılmıyor,ne nerede kendin buluyorsun. Personeller güler yüzlü ve yardımseverdi.""",28,pozitif,nötr,0
+hata_negatif_notr,"Otelde ortam güzeldi. Çalışanlar iyiydi. Sadece yemeklerde çeşit vardı ama lezzeti kötüydü, yemeklerin yağları kötüydü. Akşam yemeğini yiyemedik iyi değildi. Kahvaltısı güzeldi.",22,negatif,nötr,0
+dogru_notr_uzun,Mevkisi güzeldi. Odamızda sigara kokusu vardı çarşaf ve yorganlara sinmişti ama genel olarak temiz bir tesisti sigara içmeyen biri olduğum için beni rahatsız etti. Personelleri ilgiliydi.,26,nötr,nötr,1

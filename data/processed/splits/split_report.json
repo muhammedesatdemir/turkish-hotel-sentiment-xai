@@ -1,0 +1,64 @@
+{
+  "input_csv": "C:\\Users\\Monster\\Desktop\\python\\turkce_otel_yorum\\data\\processed\\real_final_dataset_cleaned.csv",
+  "random_state": 42,
+  "ratios": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "sizes": {
+    "total": 11953,
+    "train": 9562,
+    "val": 1195,
+    "test": 1196
+  },
+  "class_distribution": {
+    "train": {
+      "negatif": {
+        "count": 1789,
+        "percent": 18.71
+      },
+      "nötr": {
+        "count": 3433,
+        "percent": 35.9
+      },
+      "pozitif": {
+        "count": 4340,
+        "percent": 45.39
+      }
+    },
+    "val": {
+      "negatif": {
+        "count": 224,
+        "percent": 18.74
+      },
+      "nötr": {
+        "count": 429,
+        "percent": 35.9
+      },
+      "pozitif": {
+        "count": 542,
+        "percent": 45.36
+      }
+    },
+    "test": {
+      "negatif": {
+        "count": 223,
+        "percent": 18.65
+      },
+      "nötr": {
+        "count": 430,
+        "percent": 35.95
+      },
+      "pozitif": {
+        "count": 543,
+        "percent": 45.4
+      }
+    }
+  },
+  "outputs": {
+    "train_csv": "C:\\Users\\Monster\\Desktop\\python\\turkce_otel_yorum\\data\\processed\\splits\\train.csv",
+    "val_csv": "C:\\Users\\Monster\\Desktop\\python\\turkce_otel_yorum\\data\\processed\\splits\\val.csv",
+    "test_csv": "C:\\Users\\Monster\\Desktop\\python\\turkce_otel_yorum\\data\\processed\\splits\\test.csv"
+  }
+}

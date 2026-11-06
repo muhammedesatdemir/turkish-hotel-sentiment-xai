@@ -1,0 +1,246 @@
+{
+  "csv_path": "C:\\Users\\Monster\\Desktop\\python\\turkce_otel_yorum\\data\\processed\\final_genisletilmis_dataset_optimized_v3_v2.csv",
+  "n_total": 14337,
+  "class_dist": {
+    "counts": {
+      "negatif": 4370,
+      "nötr": 4660,
+      "pozitif": 5307
+    },
+    "total": 14337
+  },
+  "wc_stats_per_class": {
+    "negatif": {
+      "median": 39.0,
+      "q05": 6.0,
+      "q95": 169.55000000000018,
+      "mean": 58.24279176201373
+    },
+    "nötr": {
+      "median": 8.0,
+      "q05": 4.0,
+      "q95": 73.0,
+      "mean": 24.163948497854076
+    },
+    "pozitif": {
+      "median": 32.0,
+      "q05": 5.0,
+      "q95": 110.0,
+      "mean": 40.75880912003015
+    }
+  },
+  "source_label_crosstab": {
+    "negatif": {
+      "ai_generated": 0,
+      "manuel_toplama": 0,
+      "otelpuan_otelyorum": 4370
+    },
+    "nötr": {
+      "ai_generated": 2500,
+      "manuel_toplama": 751,
+      "otelpuan_otelyorum": 1409
+    },
+    "pozitif": {
+      "ai_generated": 0,
+      "manuel_toplama": 0,
+      "otelpuan_otelyorum": 5307
+    }
+  },
+  "top_words_per_class": {
+    "negatif": [
+      [
+        "otel",
+        2209
+      ],
+      [
+        "yemek",
+        1329
+      ],
+      [
+        "kötü",
+        1128
+      ],
+      [
+        "vardı",
+        1112
+      ],
+      [
+        "yemekler",
+        1046
+      ],
+      [
+        "değildi",
+        945
+      ],
+      [
+        "kadar",
+        915
+      ],
+      [
+        "güzel",
+        876
+      ],
+      [
+        "gibi",
+        869
+      ],
+      [
+        "otelin",
+        839
+      ],
+      [
+        "otelde",
+        817
+      ],
+      [
+        "değil",
+        796
+      ],
+      [
+        "yoktu",
+        777
+      ],
+      [
+        "personel",
+        753
+      ],
+      [
+        "hizmet",
+        710
+      ]
+    ],
+    "nötr": [
+      [
+        "ancak",
+        1055
+      ],
+      [
+        "biraz",
+        899
+      ],
+      [
+        "iyiydi",
+        889
+      ],
+      [
+        "otel",
+        835
+      ],
+      [
+        "personel",
+        831
+      ],
+      [
+        "güzeldi",
+        805
+      ],
+      [
+        "yemekler",
+        770
+      ],
+      [
+        "vardı",
+        706
+      ],
+      [
+        "genel",
+        687
+      ],
+      [
+        "değildi",
+        647
+      ],
+      [
+        "güzel",
+        539
+      ],
+      [
+        "odalar",
+        526
+      ],
+      [
+        "temizlik",
+        522
+      ],
+      [
+        "kahvaltı",
+        446
+      ],
+      [
+        "otelin",
+        440
+      ]
+    ],
+    "pozitif": [
+      [
+        "güzeldi",
+        2876
+      ],
+      [
+        "otel",
+        2298
+      ],
+      [
+        "iyiydi",
+        2268
+      ],
+      [
+        "güzel",
+        1753
+      ],
+      [
+        "hizmet",
+        1548
+      ],
+      [
+        "memnun",
+        1486
+      ],
+      [
+        "güler",
+        1103
+      ],
+      [
+        "kalitesi",
+        965
+      ],
+      [
+        "tavsiye",
+        953
+      ],
+      [
+        "vardı",
+        949
+      ],
+      [
+        "yemekler",
+        927
+      ],
+      [
+        "gayet",
+        917
+      ],
+      [
+        "ederim",
+        915
+      ],
+      [
+        "otelin",
+        903
+      ],
+      [
+        "kaldık",
+        885
+      ]
+    ]
+  },
+  "outputs": {
+    "class_dist_png": "01_class_dist.png",
+    "wc_box_png": "02_wc_box.png",
+    "source_label_heatmap_png": "03_source_label_heatmap.png",
+    "top_words_png": "04_top_words_per_class.png",
+    "corr_matrix_png": "05_corr_matrix.png",
+    "corr_matrix_csv": "corr_matrix.csv",
+    "meta_features_csv": "meta_features.csv"
+  }
+}

@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or dataset in your research, please cite it as below."
+authors:
+  - family-names: "Demir"
+    given-names: "Muhammed Esat"
+  - family-names: "Dülger"
+    given-names: "Ahmet"
+  - family-names: "Yelmen"
+    given-names: "İlkay"
+title: "Leakage-Aware and Explainable Sentiment Analysis of Turkish Hotel Reviews Using Transformer Models"
+conference:
+  name: "2026 10th International Artificial Intelligence and Data Processing Symposium (IDAP)"
+year: 2026
+publisher: "IEEE"
+url: "https://ieeexplore.ieee.org/document/11727897"
+keywords:
+  - Turkish NLP
+  - Sentiment Analysis
+  - Data Leakage
+  - Explainable AI
+  - Transformers
+  - ELECTRA
+  - BERTurk
+  - SHAP
+
